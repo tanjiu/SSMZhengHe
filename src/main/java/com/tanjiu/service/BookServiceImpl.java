@@ -16,8 +16,11 @@ import java.util.List;
 public class BookServiceImpl implements BookService {
 
     // service层调用dao层
-    @Autowired
     private BookMapper bookMapper;
+    @Autowired
+    public void setBookMapper(BookMapper bookMapper){
+        this.bookMapper=bookMapper;
+    }
     @Override
     public int addBook(Books book) {
         return bookMapper.addBook(book);

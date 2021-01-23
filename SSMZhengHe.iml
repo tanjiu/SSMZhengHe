@@ -17,13 +17,13 @@
     </facet>
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset" name="ApplicationContext" removed="false">
+        <fileset id="web springmvc servlet context" name="MVC springmvc servlet context" removed="true">
           <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
         </fileset>
-        <fileset id="fileset2" name="Spring Application Context" removed="false">
+        <fileset id="fileset" name="Springmvc" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/springmvc.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring-dao.xml</file>
-        </fileset>
-        <fileset id="fileset3" name="Spring Service" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring-service.xml</file>
         </fileset>
       </configuration>

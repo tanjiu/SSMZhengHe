@@ -2,6 +2,7 @@ package com.tanjiu.dao;
 
 import com.tanjiu.pojo.Books;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @Author: 叹久
  * @date 2021/1/23 12:55
  */
+@Repository
 public interface BookMapper {
     //增加一本书
     int addBook(Books  book);
