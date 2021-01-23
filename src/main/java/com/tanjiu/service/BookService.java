@@ -1,7 +1,6 @@
 package com.tanjiu.service;
 
 import com.tanjiu.pojo.Books;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -10,7 +9,6 @@ import java.util.List;
  * @Author: 叹久
  * @date 2021/1/23 13:39
  */
-@Service
 public interface BookService {
     //增加一本书
     int addBook(Books book);
