@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SSMZhengHe:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SSMZhengHe_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SSMZhengHe/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SSMZhengHe" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

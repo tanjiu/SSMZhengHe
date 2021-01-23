@@ -3,6 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
-
-
+<!--        将dao、service层的配置整合到一起-->
+    <import resource="classpath:spring-dao.xml"/>
+    <import resource="classpath:spring-service.xml"/>
+    <import resource="classpath:springmvc.xml"/>
 </beans>

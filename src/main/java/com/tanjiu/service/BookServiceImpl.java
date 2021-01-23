@@ -3,6 +3,7 @@ package com.tanjiu.service;
 import com.tanjiu.dao.BookMapper;
 import com.tanjiu.pojo.Books;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @Author: 叹久
  * @date 2021/1/23 13:40
  */
+@Service
 public class BookServiceImpl implements BookService {
 
     // service层调用dao层

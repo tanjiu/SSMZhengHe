@@ -10,6 +10,6 @@
         <package name="com.tanjiu.pojo"/>
     </typeAliases>
     <mappers>
-        <mapper resource="mapper/mapper.xml"></mapper>
+        <mapper resource="classpath:mapper/mapper.xml"></mapper>
     </mappers>
 </configuration>
