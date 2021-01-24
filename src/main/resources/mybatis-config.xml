@@ -10,6 +10,7 @@
         <package name="com.tanjiu.pojo"/>
     </typeAliases>
     <mappers>
-        <mapper resource="classpath:mapper/mapper.xml"></mapper>
+        <!--注意:目录文件路径不要加classpath,路径其实是看target文件里面的路径-->
+        <mapper resource="mapper/mapper.xml"></mapper>
     </mappers>
 </configuration>

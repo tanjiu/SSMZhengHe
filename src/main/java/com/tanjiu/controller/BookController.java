@@ -29,6 +29,8 @@ public class BookController {
     // 查询全部的书籍，并且返回一个书籍展示页面
     @RequestMapping("/allbook")
     public String list(Model model){
+        System.out.println("==================================================执行了=====================");
+
         List<Books> list=bookService.queryAllBook();
         model.addAttribute("list",list
         );

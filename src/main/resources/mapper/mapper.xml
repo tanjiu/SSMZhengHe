@@ -15,10 +15,10 @@
                                   detail=#{detail}
             where bookID=#{bookId}
     </update>
-    <select id="queryBookById" resultMap="Books">
+    <select id="queryBookById" resultType="com.tanjiu.pojo.Books">
         select * from ssmbulid.books where bookID=#{bookId}
     </select>
-    <select id="queryAllBook" resultMap="Books">
+    <select id="queryAllBook" resultType="com.tanjiu.pojo.Books">
         select * from ssmbulid.books
     </select>
 </mapper>

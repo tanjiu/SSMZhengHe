@@ -17,10 +17,17 @@
 <!--    2、静态资源过滤-->
     <mvc:default-servlet-handler/>
 <!--    3、扫描包，controller-->
-    <context:component-scan base-package="com.tanjiu.controller"/>
-<!--    4、视图解析器-->
+<!--    <context:component-scan base-package="com.tanjiu.controller"/>-->
+    <!-- SpringMVC容器中只注册带有@controller注解的Bean -->
+    <context:component-scan base-package="com.tanjiu.controller" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
+
+    <!--    4、视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp"/>
+        <!--注意:prefix的jsp后面要加/要不然路径拼接不正确-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 </beans>
+
